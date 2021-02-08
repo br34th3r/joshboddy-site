@@ -1,0 +1,47 @@
+.Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+
+  a {
+    flex: 1;
+    min-width: 250px;
+    margin: 30px;
+    background: $third;
+    padding: 30px;
+    text-decoration: none;
+    height: auto;
+    max-height: 500px;
+    transition: color 0.2s, background 0.2s;
+
+    &:hover {
+      background: $fifth;
+
+      h2 {
+        color: $second;
+      }
+
+      p {
+        color: $third;
+      }
+    }
+
+    h2 {
+      font-size: 1.4em;
+      color: $fourth;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: $first;
+    }
+
+    &:nth-child(3n) {
+      min-width: 400px;
+      width: 400px;
+    }
+  }
+}

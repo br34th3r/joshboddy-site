@@ -8,13 +8,16 @@
     padding: 10px;
     margin: 10px;
     flex: 1;
+
     &:focus {
       outline: none;
+      border: 2px solid $fifth;
     }
   }
 
   .Area {
-    resize: none;
+    resize: vertical;
+    max-height: 30vh;
   }
 
   .ButtonInput {

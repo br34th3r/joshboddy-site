@@ -13,8 +13,8 @@ export default class IndexPage extends Component {
       <div className="Page">
         <SEO title="Home" />
         {
-          Array.from(Array(50)).map(() => (
-            <div className="circle-container"><div className="circle"></div></div>
+          Array.from(Array(50)).map((val, i) => (
+            <div key={i} className="circle-container"><div key={i} className="circle"></div></div>
           ))
         }
         <div className="Index Content">

@@ -3,6 +3,7 @@ import Image from 'gatsby-image'
 
 import SEO from "../components/SEO"
 import Navigation from "../components/Navigation"
+import Socials from "../components/Socials"
 
 import "../sass/main.scss"
 
@@ -25,6 +26,8 @@ export default class ContactPage extends Component {
                 <textarea className="TypedInput Area" name="message" placeholder="Message" />
                 <button type="submit" className="ButtonInput">Send Message</button>
             </form>
+            <span className="subtext">or hit me up on my socials</span>
+            <Socials />
         </div>
         <Navigation />
       </div>
