@@ -1,0 +1,37 @@
+.Navigation {
+  flex: 1;
+  padding: 20px;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .Link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $fifth;
+
+      &:not(:last-child)::after {
+        color: white;
+      }
+    }
+
+    &:not(:last-child)::after {
+      content: "|";
+    }
+  }
+
+  .Active {
+    text-decoration: none;
+    color: $fifth;
+
+    &:not(:last-child)::after {
+      content: "|";
+      color: white;
+    }
+  }
+}

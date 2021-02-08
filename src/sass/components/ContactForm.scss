@@ -1,0 +1,40 @@
+.ContactForm {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  .TypedInput {
+    font-size: 1.6em;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .Area {
+    resize: none;
+  }
+
+  .ButtonInput {
+    flex: 1;
+    font-size: 1.6em;
+    padding: 10px;
+    margin: 10px;
+    background: $third;
+    border: none;
+    color: $first;
+    transition: background 0.2s, color 0.2s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: $second;
+      background: $fourth;
+      cursor: pointer;
+    }
+  }
+}

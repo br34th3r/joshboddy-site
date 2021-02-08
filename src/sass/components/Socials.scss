@@ -1,0 +1,19 @@
+.Socials {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .Social {
+    flex: 1;
+    font-size: 3em;
+    color: $third;
+    transition: color 0.2s;
+    margin: 10px;
+
+    &:hover {
+      color: $fifth;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+/* Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Mono:wght@300;500&display=swap");
+
+/* Colours */
+$first: #0b132b;
+$second: #1c2541;
+$third: #3a506b;
+$fourth: #5bc0be;
+$fifth: #6fffe9;
+
+/* Typography */
+h1,
+h2 {
+  font-family: "Poppins", arial;
+  font-weight: 500;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "Poppins", arial;
+  font-weight: 300;
+}
+
+h1 {
+  span {
+    color: $fourth;
+    font-weight: bold;
+  }
+}

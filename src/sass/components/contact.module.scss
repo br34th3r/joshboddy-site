@@ -1,0 +1,27 @@
+@import "./ContactForm.scss";
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 5em;
+  }
+
+  .subtext {
+    margin-top: 50px;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    max-width: 400px;
+    text-align: center;
+    color: #d0d0d0;
+  }
+
+  .Image {
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+}

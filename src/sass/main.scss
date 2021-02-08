@@ -1,0 +1,19 @@
+@import "./theme.scss";
+
+@import "./components/Page.scss";
+
+@import "./components/index.module.scss";
+@import "./components/contact.module.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", arial;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  background-color: $first;
+  color: white;
+}
