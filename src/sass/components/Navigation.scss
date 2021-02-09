@@ -32,7 +32,7 @@
 
     &:not(:last-child)::after {
       content: "|";
-      color: white;
+      color: #d0d0d0;
     }
   }
 }
