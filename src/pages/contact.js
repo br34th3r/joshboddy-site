@@ -22,10 +22,11 @@ export default class ContactPage extends Component {
             <h1>Get in Touch</h1>
             <span className="subtext">You can use the form below to send me a quick message and I'll try to get back to you ASAP.</span>
             <form name="Contact Form" method="POST" data-netlify="true" className="ContactForm">
-                <input className="TypedInput" type="text" name="name" placeholder="Full Name" />
-                <input className="TypedInput" type="email" name="email" placeholder="Email Address" />
-                <textarea className="TypedInput Area" name="message" placeholder="Message" />
-                <button type="submit" className="ButtonInput">Send Message</button>
+              <input type="hidden" name="form-name" value="Contact Form" />
+              <input className="TypedInput" type="text" name="name" placeholder="Full Name" />
+              <input className="TypedInput" type="email" name="email" placeholder="Email Address" />
+              <textarea className="TypedInput Area" name="message" placeholder="Message" />
+              <button type="submit" className="ButtonInput">Send Message</button>
             </form>
             <span className="subtext">or hit me up on my socials</span>
             <Socials />
