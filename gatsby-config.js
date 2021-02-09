@@ -18,6 +18,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -29,7 +37,7 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#FFFFFF`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/icon.png`,
       },
     },
     `gatsby-plugin-sass`,
@@ -44,6 +52,7 @@ module.exports = {
           github_login: process.env.GITHUB_LOGIN
         }
       }
-    }
+    },
+    `gatsby-plugin-netlify-cms`,
   ],
 }

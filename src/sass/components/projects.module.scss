@@ -10,7 +10,7 @@
     flex: 1;
     min-width: 250px;
     margin: 30px;
-    background: $third;
+    background: $second;
     padding: 30px;
     text-decoration: none;
     height: auto;
@@ -18,15 +18,7 @@
     transition: color 0.2s, background 0.2s;
 
     &:hover {
-      background: $fifth;
-
-      h2 {
-        color: $second;
-      }
-
-      p {
-        color: $third;
-      }
+      background: $third;
     }
 
     h2 {
@@ -36,7 +28,7 @@
     }
 
     p {
-      color: $first;
+      color: #d0d0d0;
     }
 
     &:nth-child(3n) {

@@ -16,12 +16,13 @@
       color: $fifth;
 
       &:not(:last-child)::after {
-        color: white;
+        color: #d0d0d0;
       }
     }
 
     &:not(:last-child)::after {
       content: "|";
+      color: #d0d0d0;
     }
   }
 

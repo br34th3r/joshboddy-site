@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Image from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import SEO from "../components/SEO"
 import Navigation from "../components/Navigation"
@@ -17,10 +17,12 @@ export default class ContactPage extends Component {
             <div className="circle-container"><div className="circle"></div></div>
           ))
         }
+        <Navigation />
         <div className="Contact Content">
             <h1>Get in Touch</h1>
             <span className="subtext">You can use the form below to send me a quick message and I'll try to get back to you ASAP.</span>
             <form className="ContactForm" data-netlify="true" name="contact" method="POST">
+                <input type="hidden" name="form-name" value="Contact" />
                 <input className="TypedInput" type="text" name="name" placeholder="Full Name" />
                 <input className="TypedInput" type="email" name="email" placeholder="Email Address" />
                 <textarea className="TypedInput Area" name="message" placeholder="Message" />
@@ -29,7 +31,6 @@ export default class ContactPage extends Component {
             <span className="subtext">or hit me up on my socials</span>
             <Socials />
         </div>
-        <Navigation />
       </div>
     )
   }

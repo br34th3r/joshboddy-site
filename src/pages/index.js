@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
 import SEO from "../components/SEO"
@@ -17,13 +18,13 @@ export default class IndexPage extends Component {
             <div key={i} className="circle-container"><div key={i} className="circle"></div></div>
           ))
         }
+        <Navigation />
         <div className="Index Content">
           <Image className="Image" fluid={this.props.data.profile.childImageSharp.fluid} />
           <h1>Hi there,<br /> I'm <span>Josh</span>.</h1>
           <span className="subtext">Take a look around and learn more about me</span>
           <Socials />
         </div>
-        <Navigation />
       </div>
     )
   }

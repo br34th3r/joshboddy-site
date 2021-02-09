@@ -1,0 +1,60 @@
+.Blog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  .BlogHeading {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      text-align: center;
+      max-width: 600px;
+      min-width: 250px;
+      font-size: 1.6em;
+    }
+  }
+
+  .BlogPosts {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .PostContainer {
+      flex: 1;
+      color: white;
+      background: $second;
+      padding: 30px;
+      text-decoration: none;
+      max-height: 150px;
+      max-width: 500px;
+      transition: color 0.2s, background 0.2s;
+
+      h2 {
+        font-size: 1.8em;
+        color: $fifth;
+      }
+
+      h3 {
+        font-size: 1em;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #d0d0d0;
+      }
+
+      &:hover {
+        background: $third;
+      }
+    }
+  }
+}

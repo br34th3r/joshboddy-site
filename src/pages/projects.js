@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { graphql } from 'gatsby'
 
 import SEO from "../components/SEO"
 import Navigation from '../components/Navigation'
@@ -14,6 +15,7 @@ export default class Projects extends Component {
                         <div className="circle-container"><div className="circle"></div></div>
                     ))
                 }
+                <Navigation />
                 <div className="Projects Content">
                     {
                         this.props.data.allGithubData.nodes[0].data.user.repositories.nodes.map((repo) => {
@@ -25,7 +27,6 @@ export default class Projects extends Component {
                         })
                     }
                 </div>
-                <Navigation />
             </div>
         )
     }
