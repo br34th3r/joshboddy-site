@@ -9,7 +9,7 @@ export default class Projects extends Component {
     render() {
         return (
             <div className="Page">
-                <SEO title="Projects" />
+                <SEO title="Projects | Josh Boddy" />
                 {
                     Array.from(Array(100)).map(() => (
                         <div className="circle-container"><div className="circle"></div></div>

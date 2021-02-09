@@ -9,7 +9,7 @@ export default class BlogPage extends Component {
     render() {
         return (
             <div className="Page">
-                <SEO title="Blog" />
+                <SEO title="Blog | Josh Boddy" />
                 {
                 Array.from(Array(50)).map((val, i) => (
                     <div key={i} className="circle-container"><div key={i} className="circle"></div></div>

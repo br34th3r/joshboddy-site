@@ -8,7 +8,7 @@ export default class BlogTemplate extends Component {
     render() {
         return (
             <div className='BlogTemplate'>
-                <SEO title={this.props.data.markdownRemark.frontmatter.title} />
+                <SEO title={`${this.props.data.markdownRemark.frontmatter.title} | Josh Boddy`} />
                 {
                     Array.from(Array(50)).map((val, i) => (
                         <div key={i} className="circle-container"><div key={i} className="circle"></div></div>

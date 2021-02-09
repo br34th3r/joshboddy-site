@@ -11,7 +11,7 @@ export default class ContactPage extends Component {
   render() {
     return (
       <div className="Page">
-        <SEO title="Home" />
+        <SEO title="Contact | Josh Boddy" />
         {
           Array.from(Array(100)).map(() => (
             <div className="circle-container"><div className="circle"></div></div>
