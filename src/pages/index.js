@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import Navigation from "../components/Navigation"
 import Socials from "../components/Socials"
 

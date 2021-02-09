@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import Navigation from '../components/Navigation'
 import ProjectContainer from "../components/ProjectContainer"
 
