@@ -21,8 +21,8 @@ export default class ContactPage extends Component {
         <div className="Contact Content">
             <h1>Get in Touch</h1>
             <span className="subtext">You can use the form below to send me a quick message and I'll try to get back to you ASAP.</span>
-            <form className="ContactForm" data-netlify="true" name="contact" method="POST">
-                <input type="hidden" name="form-name" value="Contact" />
+            <form name="contact" method="POST" data-netlify="true" className="ContactForm">
+                <input type="hidden" name="form-name" value="contact" />
                 <input className="TypedInput" type="text" name="name" placeholder="Full Name" />
                 <input className="TypedInput" type="email" name="email" placeholder="Email Address" />
                 <textarea className="TypedInput Area" name="message" placeholder="Message" />
