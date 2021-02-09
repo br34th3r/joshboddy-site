@@ -12,9 +12,23 @@
     .PostHeader {
       flex: 1;
 
+      .PostBack {
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        padding: 10px;
+        transition: color 0.2s, background 0.2s;
+
+        &:hover {
+          color: $fifth;
+          background: $second;
+        }
+      }
+
       h1 {
         font-size: 3em;
         color: $fourth;
+        margin-top: 25px;
       }
 
       h2 {

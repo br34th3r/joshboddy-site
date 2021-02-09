@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import SEO from "../components/seo"
 import Navigation from "../components/Navigation"
@@ -17,6 +18,7 @@ export default class BlogTemplate extends Component {
                 <Navigation />
                 <div className="PostPage">
                     <div className="PostHeader">
+                        <AniLink cover to="/blog" className="PostBack" bg="#3a506b">{"< Back to Blog"}</AniLink>
                         <h1>{this.props.data.markdownRemark.frontmatter.title}</h1>
                         <h2>{this.props.data.markdownRemark.frontmatter.date}</h2>
                     </div>
