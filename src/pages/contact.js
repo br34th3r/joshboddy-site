@@ -26,7 +26,7 @@ export default class ContactPage extends Component {
                 <input className="TypedInput" type="text" name="name" placeholder="Full Name" />
                 <input className="TypedInput" type="email" name="email" placeholder="Email Address" />
                 <textarea className="TypedInput Area" name="message" placeholder="Message" />
-                <input type="submit" className="ButtonInput" value="Send Message" />
+                <button type="submit" className="ButtonInput">Send Message</button>
             </form>
             <span className="subtext">or hit me up on my socials</span>
             <Socials />
