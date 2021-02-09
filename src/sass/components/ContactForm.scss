@@ -3,10 +3,13 @@
   display: flex;
   flex-direction: column;
 
-  .TypedInput {
-    font-size: 1.6em;
+  * {
+    font-size: 1.3em;
     padding: 10px;
     margin: 10px;
+  }
+
+  .TypedInput {
     flex: 1;
 
     &:focus {
@@ -22,9 +25,6 @@
 
   .ButtonInput {
     flex: 1;
-    font-size: 1.6em;
-    padding: 10px;
-    margin: 10px;
     background: $third;
     border: none;
     color: $first;
@@ -38,6 +38,25 @@
       color: $second;
       background: $fourth;
       cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: $padMed) {
+  .ContactForm {
+    margin-top: 20px;
+
+    * {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media only screen and (max-width: $phoBig) {
+  .ContactForm {
+    * {
+      font-size: 0.8em;
+      padding: 5px;
     }
   }
 }

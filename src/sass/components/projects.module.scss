@@ -8,7 +8,7 @@
 
   a {
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
     margin: 30px;
     background: $second;
     padding: 30px;
@@ -34,6 +34,17 @@
     &:nth-child(3n) {
       min-width: 400px;
       width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: $padBig) {
+  .Projects {
+    a {
+      &:nth-child(3n) {
+        min-width: 200px;
+        width: auto;
+      }
     }
   }
 }

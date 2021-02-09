@@ -17,3 +17,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 1366px) {
+  .Socials {
+    .Social {
+      font-size: 2em;
+    }
+  }
+}
+
+@media only screen and (max-width: $phoBig) {
+  .Socials {
+    .Social {
+      font-size: 1.4em;
+    }
+  }
+}

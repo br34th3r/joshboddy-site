@@ -20,10 +20,50 @@
     text-align: center;
     color: #d0d0d0;
   }
+}
 
-  .Image {
-    width: 300px;
-    border-radius: 50%;
-    margin-bottom: 50px;
+@media only screen and (max-width: $dMed) {
+  .Contact {
+    h1 {
+      font-size: 4em;
+    }
+  }
+}
+
+@media only screen and (max-width: $padSml) {
+  .Contact {
+    h1 {
+      font-size: 3em;
+    }
+
+    .subtext {
+      margin-top: 20px;
+      max-width: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: $phoBig) {
+  .Contact {
+    h1 {
+      font-size: 3em;
+    }
+
+    .subtext {
+      max-width: 250px;
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: $phoMed) {
+  .Contact {
+    h1 {
+      font-size: 2em;
+    }
+
+    .subtext {
+      font-size: 0.8em;
+    }
   }
 }

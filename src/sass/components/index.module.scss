@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 90vh;
 
   h1 {
@@ -22,8 +22,42 @@
   }
 
   .Image {
-    width: 300px;
+    width: 25vh;
     border-radius: 50%;
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: $dBig) {
+  .Index {
+    h1 {
+      font-size: 3.5em;
+    }
+
+    .subtext {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media only screen and (max-width: $dSml) {
+  .Index {
+    h1 {
+      font-size: 2.5em;
+    }
+
+    .subtext {
+      margin-top: 20px;
+      font-size: 1em;
+      max-width: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: $phoSml) {
+  .Index {
+    .subtext {
+      max-width: 250px;
+    }
   }
 }

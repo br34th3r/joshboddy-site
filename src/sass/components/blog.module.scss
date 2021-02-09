@@ -34,14 +34,15 @@
       background: $second;
       padding: 30px;
       text-decoration: none;
-      max-height: 150px;
-      max-width: 500px;
       transition: color 0.2s, background 0.2s;
       margin: 20px;
+      min-height: 200px;
+      max-height: 400px;
+      min-width: 250px;
 
       h2 {
         font-size: 1.8em;
-        color: $fifth;
+        color: $fourth;
       }
 
       h3 {
@@ -55,6 +56,29 @@
 
       &:hover {
         background: $third;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $padSml) {
+  .Blog {
+    .BlogHeading {
+      p {
+        font-size: 1.2em;
+        max-width: 300px;
+        margin: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $phoBig) {
+  .Blog {
+    .BlogPosts {
+      .PostContainer {
+        min-width: 200px;
+        max-width: 250px;
       }
     }
   }

@@ -49,3 +49,13 @@
     }
   }
 }
+
+@media only screen and (max-width: $phoBig) {
+  .BlogTemplate {
+    .PostPage {
+      .PostContent {
+        margin: 0px;
+      }
+    }
+  }
+}
