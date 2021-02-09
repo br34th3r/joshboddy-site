@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 export default class NotFoundPage extends Component {
   render() {

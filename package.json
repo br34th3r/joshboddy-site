@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "joshboddy-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Programmer, Musician and Athlete",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Josh Boddy <joshuaboddy1@gmail.com>",
   "dependencies": {
     "dotenv": "^8.2.0",
     "gatsby": "^2.26.1",
@@ -46,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/br34th3r/joshboddy-site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/br34th3r/joshboddy-site/issues"
   }
 }
